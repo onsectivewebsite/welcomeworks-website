@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import FaqList from "@/components/FaqList";
+import Photo from "@/components/Photo";
 import { Users, Wallet, Handshake, ArrowRight, ChevronRight } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -103,6 +104,33 @@ export default function IntegratedPage() {
             <strong>WelcomeWorks manages both together.</strong> One point of contact for everything
             related to your people and their pay.
           </p>
+        </div>
+      </section>
+
+      {/* Media band */}
+      <section className="section-tight">
+        <div className="container">
+          <div className="media-band reverse">
+            <Reveal className="media-text">
+              <span className="eyebrow">One point of contact</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                When information flows, errors don&apos;t
+              </h2>
+              <p className="lead">
+                With HR and payroll under one roof, every people decision reaches payroll accurately
+                and on time — no re-explaining your business to a second vendor, no gaps between
+                systems.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/handshake.jpg"
+                alt="Two professionals shaking hands over a desk"
+                ratio="4 / 3"
+                overlay
+              />
+            </Reveal>
+          </div>
         </div>
       </section>
 

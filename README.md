@@ -47,8 +47,15 @@ npm start
 - Copy for **Integrated HR & Payroll**, **Payroll Services**, and **Admissions Support** is taken
   directly from the client brief. Home, Why Us, Industries, About, and the extended FAQ are
   professionally drafted and can be refined.
-- **Images:** Labelled placeholders (`.imgph`) mark where authentic small-business / workplace
-  photography should be dropped in. Replace them with real images and use `next/image`.
+- **Images:** Authentic workplace / small-business / student photography lives in
+  `public/images/` and is rendered through the `Photo` component (`next/image`). Swap any file
+  for your own photo of the same name to update it — no code changes needed.
+- **Logo:** `public/logo.png` is the full transparent logo; `public/logo-mark.png` is the
+  background-removed emblem used in the header (on light) and footer (on a white plate, so the
+  navy strokes stay visible). `app/icon.png` is the favicon.
+- **Accessibility:** All body/UI text meets WCAG AA contrast. Accent greens use `--green-cta`
+  (white-on-green, 5:1) and `--green-ink` (green-on-white, 5:1); the light `--green-400` is used
+  for accents on the dark navy surfaces.
 
 ## Contact form
 

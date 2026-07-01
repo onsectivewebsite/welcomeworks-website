@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import Photo from "@/components/Photo";
 import { Store, Utensils, FileText, Wrench, HeartPulse, Heart, Users } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -52,6 +53,32 @@ export default function IndustriesPage() {
         intro="Different industries carry different rules — scheduling, tips, overtime, seasonal hiring. We tailor HR and payroll support to how your sector actually operates."
         crumbs={[{ label: "Industries" }]}
       />
+
+      <section className="section-tight">
+        <div className="container">
+          <div className="media-band">
+            <Reveal className="media-text">
+              <span className="eyebrow">Local businesses, local rules</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                We speak your sector&apos;s language
+              </h2>
+              <p className="lead">
+                A retail schedule, a restaurant&apos;s tipped roles, a trades crew&apos;s overtime —
+                each carries its own compliance quirks. We shape HR and payroll around how your
+                business actually operates day to day.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/retail-shop.jpg"
+                alt="Interior aisle of a small retail shop"
+                ratio="4 / 3"
+                overlay
+              />
+            </Reveal>
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <div className="container">

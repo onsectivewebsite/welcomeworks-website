@@ -32,7 +32,7 @@ const rows: Row[] = [
 ];
 
 function Cell({ v }: { v: boolean | string }) {
-  if (v === true) return <span style={{ color: "var(--green-600)", display: "inline-flex" }}><Check style={{ width: 20, height: 20 }} /></span>;
+  if (v === true) return <span style={{ color: "var(--green-ink)", display: "inline-flex" }}><Check style={{ width: 20, height: 20 }} /></span>;
   if (v === false) return <span style={{ color: "var(--ink-300)", display: "inline-flex" }}><Close style={{ width: 20, height: 20 }} /></span>;
   return <span style={{ fontSize: "0.9rem", color: "var(--ink-500)" }}>{v}</span>;
 }

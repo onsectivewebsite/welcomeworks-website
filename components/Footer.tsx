@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Image src="/logo.jpeg" alt="WelcomeWorks Group logo" width={50} height={50} />
+            <Image src="/logo-mark.png" alt="WelcomeWorks Group logo" width={50} height={50} />
             <b>WelcomeWorks Group Inc.</b>
             <p>
               Integrated HR and payroll support for Ontario small businesses — one trusted partner

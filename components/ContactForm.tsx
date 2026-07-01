@@ -108,7 +108,7 @@ export default function ContactForm() {
       </button>
       <p className="form-note">
         Prefer email? Reach us directly at{" "}
-        <a href="mailto:welcomeworksg@gmail.com" style={{ color: "var(--green-600)", fontWeight: 600 }}>
+        <a href="mailto:welcomeworksg@gmail.com" style={{ color: "var(--green-ink)", fontWeight: 600 }}>
           welcomeworksg@gmail.com
         </a>. We&apos;ll never share your information.
       </p>

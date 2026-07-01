@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
-import { Handshake, Shield, Heart, Users, MapPin, Layers } from "@/components/icons";
+import Photo from "@/components/Photo";
+import { Handshake, Shield, Heart, Users, MapPin } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -54,9 +55,12 @@ export default function AboutPage() {
               </p>
             </div>
             <Reveal>
-              <div className="imgph" data-label="Vaughan, Ontario small business" aria-label="Photo placeholder: local Ontario small business environment" style={{ minHeight: 360 }}>
-                <Layers />
-              </div>
+              <Photo
+                src="/images/office-collab.jpg"
+                alt="Two colleagues celebrating at a desk in a small business office"
+                ratio="4 / 3"
+                overlay
+              />
             </Reveal>
           </div>
         </div>

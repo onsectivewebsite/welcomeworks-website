@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
+import Photo from "@/components/Photo";
 import { Mail, MapPin, Clock, Handshake } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -24,7 +25,13 @@ export default function ContactPage() {
           <div className="contact-grid">
             {/* Details */}
             <div>
-              <h2 style={{ fontSize: "var(--fs-h3)", marginBottom: "1.4rem" }}>Get in touch</h2>
+              <Photo
+                src="/images/business-woman.jpg"
+                alt="A friendly small business professional at her workplace"
+                ratio="16 / 10"
+                className="mb-0"
+              />
+              <h2 style={{ fontSize: "var(--fs-h3)", margin: "1.6rem 0 1.4rem" }}>Get in touch</h2>
 
               <div className="contact-detail">
                 <span className="ic"><Mail /></span>

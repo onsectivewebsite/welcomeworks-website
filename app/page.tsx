@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import Photo from "@/components/Photo";
 import {
   ArrowRight, Check, Users, Wallet, GraduationCap, Shield, Handshake,
   Layers, Clock, MapPin, ChevronRight,
@@ -73,9 +74,13 @@ export default function Home() {
 
           <div className="hero-visual">
             <div className="hero-card">
-              <div className="imgph green" data-label="Small business workplace" aria-label="Photo placeholder: a small business team at work">
-                <Handshake />
-              </div>
+              <Photo
+                src="/images/small-business-owner.jpg"
+                alt="A small business owner and customer at the front counter of a shop"
+                ratio="4 / 3"
+                priority
+                sizes="(max-width: 900px) 90vw, 40vw"
+              />
               <div className="hero-badge">
                 <span className="ic"><Layers style={{ width: 20, height: 20 }} /></span>
                 HR + Payroll,<br />coordinated
@@ -184,6 +189,38 @@ export default function Home() {
             <Link href="/why-welcomeworks" className="arrow-link">
               See how we compare to a full-time hire and to software <ArrowRight />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------------- MEDIA BAND ---------------- */}
+      <section className="section bg-mist">
+        <div className="container">
+          <div className="media-band">
+            <Reveal className="media-text">
+              <span className="eyebrow">A real partner</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                Someone who knows your business — and picks up the phone
+              </h2>
+              <p className="lead" style={{ marginBottom: "1.4rem" }}>
+                You get a knowledgeable point of contact, not a ticket queue. We handle the
+                paperwork, the deadlines, and the difficult moments — hires, leaves, terminations —
+                so you can stay focused on running your business.
+              </p>
+              <ul className="checklist">
+                <li>Clear advice in plain language</li>
+                <li>Documentation that protects you</li>
+                <li>Accurate, on-time payroll every period</li>
+              </ul>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/team-meeting.jpg"
+                alt="A small business team collaborating around a table with laptops"
+                ratio="5 / 4"
+                overlay
+              />
+            </Reveal>
           </div>
         </div>
       </section>

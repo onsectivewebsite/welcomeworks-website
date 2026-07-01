@@ -4,9 +4,10 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import FaqList from "@/components/FaqList";
+import Photo from "@/components/Photo";
 import {
-  Wallet, FileText, Calendar, Shield, Lock, Check, Clock,
-  Users, ChevronRight, ArrowRight,
+  Wallet, FileText, Calendar, Lock, Check, Clock,
+  Users, ChevronRight,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -75,6 +76,33 @@ export default function PayrollPage() {
             remit on time, maintain proper records, and handle year-end reporting — so you can focus
             on your business.
           </p>
+        </div>
+      </section>
+
+      {/* Media band */}
+      <section className="section-tight">
+        <div className="container">
+          <div className="media-band">
+            <Reveal className="media-text">
+              <span className="eyebrow">Off your plate</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                Deductions, remittances, and filings — handled
+              </h2>
+              <p className="lead">
+                From CPP, EI, and income tax to ROEs and year-end T4s, we track every deadline and
+                keep your records clean and audit-ready — so a missed remittance never turns into a
+                CRA penalty.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/payroll-desk.jpg"
+                alt="Payroll paperwork and a calculator on a desk"
+                ratio="4 / 3"
+                overlay
+              />
+            </Reveal>
+          </div>
         </div>
       </section>
 

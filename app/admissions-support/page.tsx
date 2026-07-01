@@ -4,9 +4,10 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import FaqList from "@/components/FaqList";
+import Photo from "@/components/Photo";
 import {
   GraduationCap, Users, Heart, Building, TrendingUp, FileText,
-  Handshake, Layers, ChevronRight,
+  ChevronRight,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -78,6 +79,33 @@ export default function AdmissionsPage() {
             <strong>Important:</strong> Admission decisions are made solely by educational
             institutions. WelcomeWorks provides support and guidance — we do not guarantee admission
             outcomes.
+          </div>
+        </div>
+      </section>
+
+      {/* Media band */}
+      <section className="section-tight">
+        <div className="container">
+          <div className="media-band reverse">
+            <Reveal className="media-text">
+              <span className="eyebrow">Move forward with confidence</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                Clarity for a process that feels overwhelming
+              </h2>
+              <p className="lead">
+                Timelines, prerequisites, documentation, program choices — we help you understand
+                how Canadian post-secondary admissions actually work, so you can make informed
+                decisions at every step.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/students-campus.jpg"
+                alt="Students studying together at a table in a campus library"
+                ratio="4 / 3"
+                overlay
+              />
+            </Reveal>
           </div>
         </div>
       </section>

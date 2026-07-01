@@ -44,7 +44,7 @@ export default function Header() {
     <header className={`site-header${scrolled ? " scrolled" : ""}`}>
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label="WelcomeWorks Group — home">
-          <Image src="/logo.jpeg" alt="WelcomeWorks Group logo" width={46} height={46} priority />
+          <Image src="/logo-mark.png" alt="WelcomeWorks Group logo" width={46} height={46} priority />
           <span className="brand-text">
             <b>WelcomeWorks</b>
             <span>Group Inc.</span>
