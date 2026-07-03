@@ -20,6 +20,7 @@ export default function Footer() {
             <h4>Services</h4>
             <Link href="/integrated-hr-payroll">Integrated HR &amp; Payroll</Link>
             <Link href="/payroll-services">Payroll Services</Link>
+            <Link href="/hr-training">HR Training</Link>
             <Link href="/admissions-support">Admissions Support</Link>
           </div>
 
@@ -35,7 +36,7 @@ export default function Footer() {
             <h4>Get in Touch</h4>
             <p style={{ display: "flex", gap: "0.55rem", alignItems: "flex-start" }}>
               <MapPin style={{ width: 18, height: 18, flex: "none", marginTop: 3 }} />
-              Vaughan, Ontario
+              Milton, Ontario
             </p>
             <a href="mailto:welcomeworksg@gmail.com" style={{ display: "flex", gap: "0.55rem", alignItems: "flex-start" }}>
               <Mail style={{ width: 18, height: 18, flex: "none", marginTop: 3 }} />
@@ -47,8 +48,15 @@ export default function Footer() {
           </div>
         </div>
 
+        <nav className="footer-legal" aria-label="Legal">
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/cookie-policy">Cookie Policy</Link>
+          <Link href="/terms">Terms of Use</Link>
+          <Link href="/accessibility">Accessibility</Link>
+        </nav>
+
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} WelcomeWorks Group Inc. · Vaughan, Ontario</span>
+          <span>© {new Date().getFullYear()} WelcomeWorks Group Inc. · Milton, Ontario</span>
           <span>HR support &amp; payroll administration for Ontario small businesses</span>
         </div>
       </div>

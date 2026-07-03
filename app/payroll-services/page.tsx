@@ -34,7 +34,7 @@ const expect = [
   ["Accuracy", "Calculations reviewed before every payroll run."],
   ["Timeliness", "Your employees are paid on time, every time."],
   ["Compliance", "Processing aligned with CRA, ESA, and Ontario requirements."],
-  ["Confidentiality", "Payroll data handled with complete discretion."],
+  ["Confidentiality", "Payroll data handled with complete confidentiality."],
   ["Communication", "We're accessible when you have questions or last-minute changes."],
   ["Documentation", "Proper records maintained for audit and legal purposes."],
 ];

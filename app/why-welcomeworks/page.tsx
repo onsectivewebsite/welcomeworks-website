@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
+import Photo from "@/components/Photo";
 import { Check, Close, Handshake, Shield, Layers, Users, Clock, Scale } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -59,6 +60,33 @@ export default function WhyPage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Media band */}
+      <section className="section-tight">
+        <div className="container">
+          <div className="media-band reverse">
+            <Reveal className="media-text">
+              <span className="eyebrow">Room to grow</span>
+              <h2 style={{ fontSize: "var(--fs-h2)", margin: "0.8rem 0 1rem" }}>
+                Support that grows with your team
+              </h2>
+              <p className="lead">
+                Start with what you need today and add more as you go — payroll, full HR support,
+                training, and everything in between. No big hire, no long contracts, just help that
+                scales at your pace.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Photo
+                src="/images/diverse-office.jpg"
+                alt="A diverse team working together in a bright small business office"
+                ratio="4 / 3"
+                overlay
+              />
+            </Reveal>
           </div>
         </div>
       </section>

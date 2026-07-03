@@ -29,12 +29,33 @@ npm start
 | `/` | Home |
 | `/integrated-hr-payroll` | Integrated HR & Payroll (flagship) |
 | `/payroll-services` | Payroll Services |
+| `/hr-training` | HR Training for small business teams |
 | `/admissions-support` | Post-Secondary Admissions Support |
 | `/why-welcomeworks` | Why Choose WelcomeWorks |
 | `/industries` | Industries We Serve |
 | `/about` | About Us |
 | `/faq` | FAQ |
 | `/contact` | Contact (form) |
+| `/privacy-policy` · `/cookie-policy` · `/terms` · `/accessibility` | Policy pages (each separately linked in the footer) |
+
+## Testimonials (approval-gated)
+
+Client reviews live in `data/testimonials.ts` and are shown **only** when their `approved`
+flag is `true` — reviews are never published without WelcomeWorks' approval. Until approved
+reviews exist, the home "What our clients say" section shows a tidy placeholder. To publish a
+review, add/edit an entry and set `approved: true`.
+
+## Cookie banner
+
+`components/CookieBanner.tsx` shows a consent banner with **Accept all cookies** and
+**Personalize** (Essential always on; Analytics/Marketing toggles). The choice is stored in
+`localStorage` (`ww-cookie-consent`) and the banner links to the Cookie & Privacy policies.
+
+## Policies
+
+The four policy pages carry plain-language **draft/template** content with a visible note to
+confirm final wording. To publish official documents, replace the page content or drop a PDF in
+`public/` and point the footer link at it.
 
 ## Structure
 

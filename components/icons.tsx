@@ -91,3 +91,15 @@ export const Store = (p: P) => (
 export const Sparkle = (p: P) => (
   <svg {...base} {...p}><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z" /></svg>
 );
+export const Presentation = (p: P) => (
+  <svg {...base} {...p}><path d="M2 3h20M4 3v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3M12 15v4M9 21l3-2 3 2M8 11l3-3 2 2 3-4" /></svg>
+);
+export const Chat = (p: P) => (
+  <svg {...base} {...p}><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 20l1-4a8.4 8.4 0 0 1-1-4 8.5 8.5 0 0 1 9-8.4 8.4 8.4 0 0 1 9 7.9z" /></svg>
+);
+export const ClipboardCheck = (p: P) => (
+  <svg {...base} {...p}><rect x="8" y="3" width="8" height="4" rx="1" /><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 13l2 2 4-4" /></svg>
+);
+export const Star = (p: P) => (
+  <svg {...base} {...p} fill="currentColor" stroke="none"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.9 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z" /></svg>
+);

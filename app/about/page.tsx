@@ -8,12 +8,12 @@ import { Handshake, Shield, Heart, Users, MapPin } from "@/components/icons";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "WelcomeWorks Group Inc. is a Vaughan, Ontario HR and payroll firm helping small businesses manage their people and their pay — as a trusted, knowledgeable, approachable partner.",
+    "WelcomeWorks Group Inc. is a Milton, Ontario HR and payroll firm helping small businesses manage their people and their pay — as a trusted, knowledgeable, approachable partner.",
 };
 
 const values = [
   { icon: <Handshake />, title: "Approachable", desc: "We speak plainly and stay accessible. No jargon walls, no ticket queues — a real partner who knows your business." },
-  { icon: <Shield />, title: "Trustworthy", desc: "We treat compliance as protection and handle your data with complete discretion. What we tell you is honest and clear." },
+  { icon: <Shield />, title: "Trustworthy", desc: "We treat compliance as protection and handle your data with complete confidentiality. What we tell you is honest and clear." },
   { icon: <Users />, title: "Knowledgeable", desc: "We work within Ontario's ESA, the Human Rights Code, and CRA requirements so you don't have to become an expert in them." },
   { icon: <Heart />, title: "Small-business first", desc: "We're built for the realities of small business — right-sized support, sensible cost, and care in every interaction." },
 ];
@@ -57,7 +57,7 @@ export default function AboutPage() {
             <Reveal>
               <Photo
                 src="/images/office-collab.jpg"
-                alt="Two colleagues celebrating at a desk in a small business office"
+                alt="Two colleagues working together at a computer in a small business office"
                 ratio="4 / 3"
                 overlay
               />
@@ -93,10 +93,10 @@ export default function AboutPage() {
           <div className="card-icon" style={{ margin: "0 auto 1.2rem", background: "var(--navy-700)", color: "#fff", border: "none" }}>
             <MapPin />
           </div>
-          <h2 style={{ fontSize: "var(--fs-h3)" }}>Based in Vaughan, serving Ontario</h2>
+          <h2 style={{ fontSize: "var(--fs-h3)" }}>Based in Milton, serving Ontario</h2>
           <p className="lead" style={{ marginTop: "0.8rem" }}>
             WelcomeWorks Group Inc. is proud to support small businesses across Ontario from our home
-            base in Vaughan. Wherever you are in the province, if you have employees, we can help.
+            base in Milton. Wherever you are in the province, if you have employees, we can help.
           </p>
         </div>
       </section>

@@ -36,6 +36,7 @@ const hrItems = [
   "Ontario ESA compliance guidance",
   "Human Rights Code awareness",
   "Employee record maintenance",
+  "Team HR training & manager workshops",
 ];
 
 const payItems = [

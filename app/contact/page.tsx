@@ -7,7 +7,7 @@ import { Mail, MapPin, Clock, Handshake } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Book a free consultation with WelcomeWorks Group Inc. HR and payroll support for Ontario small businesses. Based in Vaughan, Ontario. Email welcomeworksg@gmail.com.",
+    "Book a free consultation with WelcomeWorks Group Inc. HR and payroll support for Ontario small businesses. Based in Milton, Ontario. Email welcomeworksg@gmail.com.",
 };
 
 export default function ContactPage() {
@@ -45,7 +45,7 @@ export default function ContactPage() {
                 <span className="ic"><MapPin /></span>
                 <div>
                   <b>Location</b>
-                  <span>Vaughan, Ontario — serving businesses across Ontario</span>
+                  <span>Milton, Ontario — serving businesses across Ontario</span>
                 </div>
               </div>
 

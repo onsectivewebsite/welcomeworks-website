@@ -7,12 +7,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/integrated-hr-payroll",
     "/payroll-services",
+    "/hr-training",
     "/admissions-support",
     "/why-welcomeworks",
     "/industries",
     "/about",
     "/faq",
     "/contact",
+    "/privacy-policy",
+    "/cookie-policy",
+    "/terms",
+    "/accessibility",
   ];
   return routes.map((path) => ({
     url: `${BASE}${path}`,

@@ -2,9 +2,10 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
 import Photo from "@/components/Photo";
+import Testimonials from "@/components/Testimonials";
 import {
-  ArrowRight, Check, Users, Wallet, GraduationCap, Shield, Handshake,
-  Layers, Clock, MapPin, ChevronRight,
+  ArrowRight, Check, Users, Wallet, Shield, Handshake,
+  Layers, Clock, MapPin, ChevronRight, Presentation,
 } from "@/components/icons";
 
 const triggers = [
@@ -17,27 +18,27 @@ const triggers = [
 
 const services = [
   {
-    icon: <Layers />, href: "/integrated-hr-payroll", tag: "Flagship",
+    icon: <Layers />, href: "/integrated-hr-payroll", tag: "Most popular",
     title: "Integrated HR & Payroll",
-    desc: "One provider for both functions. Every HR decision flows straight into accurate payroll — nothing dropped between vendors.",
+    desc: "Your HR and payroll, handled together by one friendly team — so every hire, raise, and leave lands in payroll correctly, without the cost of full-time staff.",
   },
   {
     icon: <Wallet />, href: "/payroll-services", tag: "Standalone",
     title: "Payroll Services",
-    desc: "Accurate, on-time payroll every pay period. CRA remittances, ROEs, T4s, and full ESA-aligned compliance — handled.",
+    desc: "Accurate, on-time payroll every pay period. We take care of CRA remittances, ROEs, T4s, and the ESA rules — so you don't have to.",
   },
   {
-    icon: <GraduationCap />, href: "/admissions-support", tag: "Supplementary",
-    title: "Admissions Support",
-    desc: "Information, guidance, and referral for students navigating Canadian post-secondary admissions with confidence.",
+    icon: <Presentation />, href: "/hr-training", tag: "For your team",
+    title: "HR Training",
+    desc: "Practical, plain-language workshops that give owners and managers the confidence to handle everyday people situations the right way.",
   },
 ];
 
 const whyPoints = [
-  { icon: <Handshake />, title: "One point of contact", desc: "Everything about your people and their pay handled by one team that knows your business." },
-  { icon: <Shield />, title: "Compliance as protection", desc: "ESA, CRA, and Human Rights Code obligations met — reducing your exposure to penalties and complaints." },
-  { icon: <Users />, title: "Built for small business", desc: "Right-sized support for Ontario small businesses — not a corporate consulting overlay." },
-  { icon: <Clock />, title: "Accurate and on time", desc: "Calculations reviewed before every run. Your employees paid correctly, every period." },
+  { icon: <Handshake />, title: "One friendly team", desc: "One team looks after everything to do with your people and their pay — no bouncing between vendors." },
+  { icon: <Shield />, title: "Stay onside, stay protected", desc: "We keep you aligned with the ESA, CRA, and Human Rights Code, so small mistakes don't turn into big penalties." },
+  { icon: <Users />, title: "Built for small business", desc: "Support sized — and priced — for small business. It's the HR and payroll help you'd hire if you could." },
+  { icon: <Clock />, title: "Accurate and on time", desc: "We double-check every payroll run, so your team is paid correctly and on time, every time." },
 ];
 
 export default function Home() {
@@ -50,12 +51,12 @@ export default function Home() {
           <div>
             <span className="eyebrow">HR &amp; Payroll · Ontario Small Business</span>
             <h1>
-              One partner for your <span className="accent">people</span> and their <span className="accent">pay</span>.
+              One friendly partner for your <span className="accent">people</span> and their <span className="accent">pay</span>.
             </h1>
             <p className="lead">
-              Most businesses treat HR and payroll as two separate things. We manage both together —
-              so every hire, raise, leave, and termination lands correctly in payroll. One provider.
-              Both functions. Nothing falling through the cracks.
+              You don&apos;t need to hire full-time HR and payroll staff to get it done right.
+              WelcomeWorks gives Ontario small businesses connected HR and payroll support — so every
+              hire, raise, and leave is handled properly, and nothing slips through the cracks.
             </p>
             <div className="hero-actions">
               <Link href="/contact" className="btn btn-primary btn-lg">
@@ -68,7 +69,7 @@ export default function Home() {
             <div className="hero-trust">
               <span><Check /> ESA &amp; CRA compliant</span>
               <span><Check /> One point of contact</span>
-              <span><MapPin /> Vaughan, Ontario</span>
+              <span><MapPin /> Milton, Ontario</span>
             </div>
           </div>
 
@@ -95,8 +96,8 @@ export default function Home() {
         <div className="container">
           <div className="section-head center">
             <span className="eyebrow" style={{ justifyContent: "center" }}>What we do</span>
-            <h2>Support that fits how small businesses actually run</h2>
-            <p>Choose integrated HR and payroll, standalone payroll, or admissions support — all delivered with the same care.</p>
+            <h2>The HR &amp; payroll department you don&apos;t have to hire</h2>
+            <p>Have it all handled together, get payroll on its own, or bring in training for your team — whatever fits where your business is right now.</p>
           </div>
           <div className="grid grid-3">
             {services.map((s, i) => (
@@ -113,6 +114,12 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+          <p className="text-center lead" style={{ marginTop: "2rem", maxWidth: "60ch", marginInline: "auto" }}>
+            Helping a student in the family, too? We also offer{" "}
+            <Link href="/admissions-support" className="arrow-link" style={{ display: "inline-flex" }}>
+              Post-Secondary Admissions Support <ArrowRight />
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -172,7 +179,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head center">
             <span className="eyebrow" style={{ justifyContent: "center" }}>Why WelcomeWorks</span>
-            <h2>A knowledgeable partner, not a corporate overlay</h2>
+            <h2>Big-company know-how, small-business friendly</h2>
           </div>
           <div className="grid grid-4">
             {whyPoints.map((p, i) => (
@@ -258,9 +265,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------------- TESTIMONIALS ---------------- */}
+      <Testimonials />
+
       <CTABand
-        title="Let's talk about integrated HR and payroll"
-        text="One provider. Two critical functions. Zero dropped balls. Book a free consultation and we'll map out what integrated support looks like for your business."
+        title="Let's take HR & payroll off your plate"
+        text="You don't need to hire a full-time team to get it done right. Book a free, friendly consultation and we'll map out connected HR and payroll support that fits your business."
       />
     </>
   );

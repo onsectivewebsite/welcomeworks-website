@@ -9,6 +9,7 @@ import { ChevronDown, Menu, Close, ArrowRight } from "./icons";
 const services = [
   { href: "/integrated-hr-payroll", title: "Integrated HR & Payroll", desc: "Our flagship service" },
   { href: "/payroll-services", title: "Payroll Services", desc: "Standalone payroll administration" },
+  { href: "/hr-training", title: "HR Training", desc: "Workshops for your team" },
   { href: "/admissions-support", title: "Admissions Support", desc: "Post-secondary guidance" },
 ];
 

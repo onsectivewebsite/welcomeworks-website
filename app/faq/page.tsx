@@ -14,11 +14,11 @@ const groups: { heading: string; items: QA[] }[] = [
   {
     heading: "HR & Payroll — General",
     items: [
-      { q: "What exactly does WelcomeWorks do?", a: "We provide integrated HR support and payroll administration for Ontario small businesses — one provider for everything related to your people and their pay. We also offer standalone payroll and standalone HR consulting." },
+      { q: "What exactly does WelcomeWorks do?", a: "We're the HR and payroll team for small businesses that aren't ready to hire full-time HR or payroll staff. You can have it all looked after together, get payroll on its own, add HR training for your team, or bring us in for standalone HR help — whatever fits where you are." },
       { q: "Why should HR and payroll be handled together?", a: "Every HR decision — a hire, a raise, a leave, a termination — has a direct payroll consequence. When one team handles both, information flows and errors are avoided. When two separate vendors manage each, things fall through the cracks." },
       { q: "We already have a bookkeeper handling payroll. Can you just do HR?", a: "Yes. We offer standalone HR consulting and can coordinate with your existing payroll arrangement where needed." },
       { q: "How quickly can you get our setup running?", a: "We'll give you a clear timeline during the consultation based on your current setup and payroll complexity." },
-      { q: "Do you only work with businesses in Vaughan?", a: "We're based in Vaughan, Ontario and serve small businesses across the province. We'll confirm fit during your consultation." },
+      { q: "Do you only work with businesses in Milton?", a: "We're based in Milton, Ontario and serve small businesses across the province. We'll confirm fit during your consultation." },
     ],
   },
   {
@@ -39,6 +39,7 @@ const groups: { heading: string; items: QA[] }[] = [
       { q: "Can you help with terminations?", a: "Yes. We support termination documentation and coordinate the payroll side — ESA entitlements, final pay, vacation pay, and ROE — so the process is handled correctly and with care." },
       { q: "Do you provide legal advice?", a: "No. We provide HR guidance aligned with Ontario's ESA and awareness of the Human Rights Code. For legal proceedings or legal advice, we recommend engaging qualified legal counsel." },
       { q: "Can you develop policies and an employee handbook for us?", a: "Yes. Policy development and employee handbooks are part of our HR service, tailored to your business." },
+      { q: "Do you offer HR training for our team?", a: "Yes! We run practical, plain-language HR training and workshops for owners, managers, and teams — on-site or online. It's a great fit if you want your people to handle everyday situations with confidence." },
     ],
   },
   {
