@@ -176,7 +176,8 @@ h1, h2, h3, h4 {
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease), color 0.2s var(--ease);
   white-space: nowrap; line-height: 1;
 }
-.btn svg { transition: transform 0.25s var(--ease); }
+.btn svg { width: 18px; height: 18px; flex: none; transition: transform 0.25s var(--ease); }
+.btn-lg svg { width: 20px; height: 20px; }
 .btn:hover svg { transform: translateX(4px); }
 
 .btn-primary { background: var(--green-cta); color: #fff; box-shadow: var(--shadow-green); }
@@ -644,6 +645,17 @@ h1, h2, h3, h4 {
   .cookie-actions { width: 100%; }
   .cookie-actions .btn { flex: 1; }
 }
+
+/* ==========================================================================
+   Business case / research cards
+   ========================================================================== */
+.biz-card { display: flex; flex-direction: column; gap: 0.7rem; }
+.stat-num { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3rem); color: var(--green-ink); line-height: 1; letter-spacing: -0.03em; }
+.stat-label { font-weight: 700; color: var(--navy-800); font-family: var(--font-display); font-size: 1.05rem; }
+.stat-lead { font-weight: 700; color: var(--navy-800); font-family: var(--font-display); font-size: 1.15rem; }
+.biz-quote { font-size: 1.02rem; color: var(--ink-700); line-height: 1.55; border-left: 3px solid var(--green-500); padding-left: 1rem; margin: 0; font-style: italic; }
+.source { display: block; margin-top: auto; padding-top: 0.9rem; border-top: 1px solid var(--cloud); font-size: 0.8rem; color: var(--ink-500); }
+.source b { color: var(--navy-700); }
 
 /* ==========================================================================
    Testimonials

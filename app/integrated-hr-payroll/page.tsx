@@ -209,6 +209,74 @@ export default function IntegratedPage() {
         </div>
       </section>
 
+      {/* Business case */}
+      <section className="section bg-navy">
+        <div className="container">
+          <div className="section-head center">
+            <span className="eyebrow" style={{ justifyContent: "center" }}>The business case</span>
+            <h2>One system, done right</h2>
+            <p>
+              Independent research keeps reaching the same conclusion: HR and payroll work better —
+              and cost far less in errors — when they run as one connected system. We deliver that as
+              a service, with real people who pick up the phone.
+            </p>
+          </div>
+
+          <div className="grid grid-3">
+            <Reveal>
+              <div className="card biz-card">
+                <p className="stat-lead">Fewer tools, less double-entry</p>
+                <blockquote className="biz-quote">
+                  The greatest return comes from systems that &ldquo;automate routine work, unify
+                  workforce data, and give HR teams clearer visibility into their people and
+                  processes.&rdquo;
+                </blockquote>
+                <p>
+                  When payroll and HR talk to each other, you stop re-entering the same information
+                  twice — and stop paying for the mistakes that come with it.
+                </p>
+                <span className="source">
+                  <b>Nucleus Research</b> — 2026 SMB HCM Value Matrix (Evelyn McMullen, Research Manager)
+                </span>
+              </div>
+            </Reveal>
+
+            <Reveal delay={90}>
+              <div className="card biz-card">
+                <span className="stat-num">1 in 5</span>
+                <p className="stat-label">payrolls contains an error</p>
+                <p>
+                  At an average of about <strong>$291 USD</strong> to fix each one — with roughly{" "}
+                  <strong>15 corrections every pay period</strong> at the average company. For a small
+                  business, that&apos;s real money leaking out twice a month.
+                </p>
+                <span className="source"><b>Ernst &amp; Young</b> — payroll error study, 2022</span>
+              </div>
+            </Reveal>
+
+            <Reveal delay={180}>
+              <div className="card biz-card">
+                <span className="stat-num">325%+</span>
+                <p className="stat-label">average return on investment</p>
+                <p>
+                  For businesses that moved from manual processes — spreadsheets, paper timesheets,
+                  late-night calculator payroll — to a modern cloud HR and payroll system. It
+                  typically pays for itself several times over.
+                </p>
+                <span className="source"><b>Nucleus Research</b> — 2020 HCM ROI review</span>
+              </div>
+            </Reveal>
+          </div>
+
+          <div className="note-box" style={{ maxWidth: 840, margin: "2.2rem auto 0" }}>
+            <strong>A note on these figures:</strong> the EY study reflects 2022 US data and the
+            Nucleus ROI review dates to 2020, so we share them as illustrative industry research —
+            not exact figures for Ontario today. The takeaway holds: one connected approach means
+            fewer errors and less wasted time.
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section">
         <div className="container container-narrow">
