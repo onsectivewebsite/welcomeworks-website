@@ -3,11 +3,10 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CTABand from "@/components/CTABand";
-import FaqList from "@/components/FaqList";
 import Photo from "@/components/Photo";
 import {
   GraduationCap, Users, Heart, Building, TrendingUp, FileText,
-  ChevronRight,
+  ChevronRight, ArrowRight,
 } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -32,14 +31,6 @@ const provide = [
   ["International Student Guidance", "We help international applicants understand the Canadian admissions landscape and general application process. For immigration and visa matters, we strongly recommend consulting a Regulated Canadian Immigration Consultant (RCIC) or qualified immigration lawyer."],
 ];
 
-const faqs = [
-  { q: "Do you work with specific colleges or universities?", a: "We provide general guidance for Ontario and Canadian post-secondary institutions. We'll discuss your specific targets during our initial conversation." },
-  { q: "Can you guarantee I'll get accepted?", a: "No. And be cautious of any service that claims they can. Admission decisions rest entirely with the educational institution. We help you understand the process and put together a strong application." },
-  { q: "Can parents contact you on behalf of their child?", a: "Yes. Parents and families are welcome to reach out. We're happy to help parents understand the process so they can support their child effectively." },
-  { q: "Do you help with international student visa applications?", a: "We provide general information about the admissions process for international students. For immigration and visa matters, consult a Regulated Canadian Immigration Consultant (RCIC) or qualified immigration lawyer." },
-  { q: "How much does admissions support cost?", a: "Contact us to discuss your specific situation. We'll give you a clear, honest picture of what we offer and what it costs." },
-];
-
 const core = [
   ["Integrated HR & Payroll", "Our flagship service for Ontario businesses", "/integrated-hr-payroll"],
   ["Payroll Services", "Standalone payroll administration", "/payroll-services"],
@@ -61,7 +52,7 @@ export default function AdmissionsPage() {
           <div className="note-box" style={{ marginBottom: "2rem" }}>
             <strong>Note on scope:</strong> This is a supplementary service offered by WelcomeWorks
             alongside our core HR and payroll work. It is a standalone offering — not bundled with
-            employment services.
+            HR &amp; Payroll services.
           </div>
           <div className="prose">
             <p className="lead">
@@ -170,8 +161,16 @@ export default function AdmissionsPage() {
           <div className="section-head center">
             <span className="eyebrow" style={{ justifyContent: "center" }}>Common questions</span>
             <h2>Admissions support, answered</h2>
+            <p>
+              Wondering about acceptance, costs, international applications, or how parents can help?
+              We&apos;ve answered the questions we hear most.
+            </p>
           </div>
-          <FaqList items={faqs} />
+          <div className="text-center">
+            <Link href="/admissions-support/faq" className="btn btn-primary btn-lg">
+              Read Admissions Support FAQs <ArrowRight />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -180,7 +179,7 @@ export default function AdmissionsPage() {
         <div className="container container-narrow">
           <div className="section-head center">
             <h2 style={{ fontSize: "var(--fs-h3)" }}>Back to our core services</h2>
-            <p>WelcomeWorks is primarily an HR and payroll firm. If you&apos;re a business owner looking for employment support:</p>
+            <p>WelcomeWorks is primarily an HR and payroll firm. If you&apos;re a business owner looking for HR &amp; Payroll support:</p>
           </div>
           <div className="divider-links">
             {core.map(([t, d, href]) => (

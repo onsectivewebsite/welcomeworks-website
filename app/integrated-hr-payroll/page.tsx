@@ -246,9 +246,10 @@ export default function IntegratedPage() {
                 <span className="stat-num">1 in 5</span>
                 <p className="stat-label">payrolls contains an error</p>
                 <p>
-                  At an average of about <strong>$291 USD</strong> to fix each one — with roughly{" "}
-                  <strong>15 corrections every pay period</strong> at the average company. For a small
-                  business, that&apos;s real money leaking out twice a month.
+                  At an average of about{" "}
+                  <mark className="hl-yellow"><strong>$291 USD</strong> to fix each one</mark> — with
+                  roughly <strong>15 corrections every pay period</strong> at the average company. For
+                  a small business, that&apos;s real money leaking out twice a month.
                 </p>
                 <span className="source"><b>Ernst &amp; Young</b> — payroll error study, 2022</span>
               </div>
@@ -269,10 +270,8 @@ export default function IntegratedPage() {
           </div>
 
           <div className="note-box" style={{ maxWidth: 840, margin: "2.2rem auto 0" }}>
-            <strong>A note on these figures:</strong> the EY study reflects 2022 US data and the
-            Nucleus ROI review dates to 2020, so we share them as illustrative industry research —
-            not exact figures for Ontario today. The takeaway holds: one connected approach means
-            fewer errors and less wasted time.
+            The takeaway holds: one connected approach means the work gets done once — accurately,
+            on time, and without the back-and-forth.
           </div>
         </div>
       </section>

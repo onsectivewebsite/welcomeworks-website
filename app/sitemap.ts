@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/payroll-services",
     "/hr-training",
     "/admissions-support",
+    "/admissions-support/faq",
     "/why-welcomeworks",
     "/industries",
     "/about",

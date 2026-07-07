@@ -55,6 +55,11 @@ export default function Footer() {
           <Link href="/accessibility">Accessibility</Link>
         </nav>
 
+        <p className="footer-insurance">
+          Insured for professional liability (E&amp;O) and general liability. Certificate available
+          on request.
+        </p>
+
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} WelcomeWorks Group Inc. · Milton, Ontario</span>
           <span>HR support &amp; payroll administration for Ontario small businesses</span>
