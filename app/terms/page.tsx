@@ -53,7 +53,7 @@ export default function Terms() {
       <h2>Contact</h2>
       <p>
         Questions about these terms? Email{" "}
-        <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a>.
+        <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a>.
       </p>
     </PolicyPage>
   );

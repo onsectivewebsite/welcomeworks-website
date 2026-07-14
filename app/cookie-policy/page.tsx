@@ -38,7 +38,7 @@ export default function CookiePolicy() {
       <p>
         For details on how we handle personal information, see our{" "}
         <Link href="/privacy-policy">Privacy Policy</Link>. Questions? Email{" "}
-        <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a>.
+        <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a>.
       </p>
     </PolicyPage>
   );

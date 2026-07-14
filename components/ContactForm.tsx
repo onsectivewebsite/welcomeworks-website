@@ -40,7 +40,7 @@ export default function ContactForm() {
     } catch (err) {
       setStatus("err");
       setMessage(
-        err instanceof Error ? err.message : "Something went wrong. Please email welcomeworksg@gmail.com."
+        err instanceof Error ? err.message : "Something went wrong. Please email welcomeworksgroupca@gmail.com."
       );
     }
   }
@@ -108,8 +108,8 @@ export default function ContactForm() {
       </button>
       <p className="form-note">
         Prefer email? Reach us directly at{" "}
-        <a href="mailto:welcomeworksg@gmail.com" style={{ color: "var(--green-ink)", fontWeight: 600 }}>
-          welcomeworksg@gmail.com
+        <a href="mailto:welcomeworksgroupca@gmail.com" style={{ color: "var(--green-ink)", fontWeight: 600 }}>
+          welcomeworksgroupca@gmail.com
         </a>. We&apos;ll never share your information.
       </p>
     </form>

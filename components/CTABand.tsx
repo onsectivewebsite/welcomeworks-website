@@ -27,8 +27,8 @@ export default function CTABand({
             <Link href="/contact" className="btn btn-primary btn-lg">
               {primaryLabel} <ArrowRight />
             </Link>
-            <a href="mailto:welcomeworksg@gmail.com" className="btn btn-ghost btn-lg">
-              <Mail style={{ width: 18, height: 18 }} /> welcomeworksg@gmail.com
+            <a href="mailto:welcomeworksgroupca@gmail.com" className="btn btn-ghost btn-lg">
+              <Mail style={{ width: 18, height: 18 }} /> welcomeworksgroupca@gmail.com
             </a>
           </div>
         </div>

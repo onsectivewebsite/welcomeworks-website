@@ -7,7 +7,7 @@ import { Mail, MapPin, Clock, Handshake } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Book a free consultation with WelcomeWorks Group Inc. HR and payroll support for Ontario small businesses. Based in Milton, Ontario. Email welcomeworksg@gmail.com.",
+    "Book a free consultation with WelcomeWorks Group Inc. HR and payroll support for Ontario small businesses. Based in Milton, Ontario. Email welcomeworksgroupca@gmail.com.",
 };
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <span className="ic"><Mail /></span>
                 <div>
                   <b>Email</b>
-                  <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a>
+                  <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a>
                 </div>
               </div>
 

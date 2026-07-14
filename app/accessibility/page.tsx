@@ -36,7 +36,7 @@ export default function Accessibility() {
       <p>
         We&apos;re always improving. If you run into a barrier on our website, or need information in
         another format, please let us know and we&apos;ll do our best to help. Email{" "}
-        <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a> and we&apos;ll respond
+        <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a> and we&apos;ll respond
         as quickly as we can.
       </p>
     </PolicyPage>

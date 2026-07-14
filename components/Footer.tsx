@@ -38,9 +38,9 @@ export default function Footer() {
               <MapPin style={{ width: 18, height: 18, flex: "none", marginTop: 3 }} />
               Milton, Ontario
             </p>
-            <a href="mailto:welcomeworksg@gmail.com" style={{ display: "flex", gap: "0.55rem", alignItems: "flex-start" }}>
+            <a href="mailto:welcomeworksgroupca@gmail.com" style={{ display: "flex", gap: "0.55rem", alignItems: "flex-start" }}>
               <Mail style={{ width: 18, height: 18, flex: "none", marginTop: 3 }} />
-              welcomeworksg@gmail.com
+              welcomeworksgroupca@gmail.com
             </a>
             <Link href="/contact" style={{ color: "var(--green-400)", fontWeight: 700 }}>
               Book a Free Consultation →

@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
       <p>
         You may ask to access, correct, or delete the personal information we hold about you, or
         withdraw consent, subject to legal limits. To make a request, email us at{" "}
-        <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a>.
+        <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a>.
       </p>
 
       <h2>Changes</h2>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
       <h2>Contact</h2>
       <p>
         Questions about your privacy? Email{" "}
-        <a href="mailto:welcomeworksg@gmail.com">welcomeworksg@gmail.com</a> — WelcomeWorks Group
+        <a href="mailto:welcomeworksgroupca@gmail.com">welcomeworksgroupca@gmail.com</a> — WelcomeWorks Group
         Inc., Milton, Ontario.
       </p>
     </PolicyPage>
