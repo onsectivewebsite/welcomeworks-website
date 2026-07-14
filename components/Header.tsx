@@ -42,7 +42,8 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className={`site-header${scrolled ? " scrolled" : ""}`}>
+    <>
+      <header className={`site-header${scrolled ? " scrolled" : ""}`}>
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label="WelcomeWorks Group — home">
           <Image src="/logo-mark.png" alt="WelcomeWorks Group logo" width={46} height={46} priority />
@@ -87,8 +88,10 @@ export default function Header() {
           </button>
         </div>
       </div>
+      </header>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — rendered outside <header> so the header's
+          backdrop-filter doesn't trap position:fixed inside it. */}
       <div className={`mobile-nav${open ? " open" : ""}`} onClick={() => setOpen(false)}>
         <div className="mobile-panel" onClick={(e) => e.stopPropagation()}>
           <button className="m-close" aria-label="Close menu" onClick={() => setOpen(false)}>
@@ -107,6 +110,6 @@ export default function Header() {
           </Link>
         </div>
       </div>
-    </header>
+    </>
   );
 }
